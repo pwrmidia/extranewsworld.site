@@ -264,68 +264,14 @@
         <!-- Footer -->
         <footer class="footer">
             <p>&copy; 2025 - Todos los derechos reservados</p>
+            <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
         </footer>
-    </div>
-
-    <script>
-        function playVideo() {
-            const placeholder = document.getElementById('videoPlaceholder');
-            
-            // Aqui você pode substituir por seu vídeo real
-            placeholder.innerHTML = `
-                <video width="100%" height="450" controls autoplay>
-                    <source src="seu-video-aqui.mp4" type="video/mp4">
-                    <p>Seu navegador não suporta vídeos HTML5. 
-                    <a href="seu-video-aqui.mp4">Clique aqui para baixar o vídeo</a>.</p>
-                </video>
-            `;
-            
-            // Alternativa: incorporar vídeo do YouTube ou Vimeo
-            // placeholder.innerHTML = `
-            //     <iframe width="100%" height="450" 
-            //             src="https://www.youtube.com/embed/SEU_VIDEO_ID" 
-            //             frameborder="0" allowfullscreen>
-            //     </iframe>
-            // `;
-        }
-
-        function handleCTA() {
-            alert('Redirecionando para a página de compra...');
-            // Aqui você pode redirecionar para sua página de vendas/checkout
-            // window.location.href = 'https://sua-pagina-de-vendas.com';
-        }
-
-        // Animações suaves ao rolar a página
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('.benefit-item');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-        // Efeito de digitação no título
-        document.addEventListener('DOMContentLoaded', () => {
-            const title = document.querySelector('.header h1');
-            const text = title.textContent;
-            title.textContent = '';
-            
-            let i = 0;
-            const typeWriter = () => {
-                if (i < text.length) {
-                    title.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100);
-                }
-            };
-            
-            setTimeout(typeWriter, 500);
-        });
+    
     </script>
 </body>
 </html>

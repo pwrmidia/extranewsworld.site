@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <script>
-  window.pixelId = "66be9c6a834c3bc6cfc148eb";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restore Your Vision Naturally - Breakthrough Discovery</title>
+    <title>Transforma tu vida hoy</title>
     <style>
         * {
             margin: 0;
@@ -20,22 +12,190 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px 0;
         }
 
         .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .video-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            background: #fff;
+            background: #000;
             border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             overflow: hidden;
-            animation: fadeInUp 1s ease-out;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: #ff4757;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            background: #ff3742;
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+
+        .benefits-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .benefits-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #ff4757;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            opacity: 0.8;
         }
 
         @keyframes fadeInUp {
@@ -49,309 +209,77 @@
             }
         }
 
-        .header {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            padding: 40px 30px;
-            text-align: center;
-            color: white;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 50px 40px;
-        }
-
-        .greeting {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        .story-section {
-            margin-bottom: 30px;
-        }
-
-        .story-section p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .highlight {
-            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        .testimonial {
-            background: #f8f9fa;
-            border-left: 5px solid #4facfe;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 8px;
-            font-style: italic;
-            position: relative;
-        }
-
-        .testimonial::before {
-            content: '"';
-            font-size: 4em;
-            color: #4facfe;
-            position: absolute;
-            top: -10px;
-            left: 15px;
-            opacity: 0.3;
-        }
-
-        .image-placeholder {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            border-radius: 10px;
-            margin: 30px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2em;
-            text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-            padding: 40px;
-            margin: 40px -40px;
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 18px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-        }
-
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .stat-item {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #4facfe;
-            display: block;
-        }
-
-        .stat-label {
-            color: #666;
-            margin-top: 5px;
-        }
-
-        .ps-section {
-            background: #f1f3f4;
-            padding: 30px;
-            margin: 40px -40px -50px -40px;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .ps-section p {
-            font-size: 1.05em;
-            color: #555;
-        }
-
-        .ps-label {
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1.2em;
-        }
-
         @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 10px;
-            }
-            
-            .content {
-                padding: 30px 25px;
-            }
-            
             .header h1 {
-                font-size: 2em;
+                font-size: 2.5rem;
             }
             
-            .stats {
-                flex-direction: column;
+            .header p {
+                font-size: 1.1rem;
             }
             
-            .stat-item {
-                margin-bottom: 20px;
-            }
-            
+            .video-section,
+            .benefits-section,
             .cta-section {
-                margin: 30px -25px;
                 padding: 30px 20px;
             }
             
-            .ps-section {
-                margin: 30px -25px -30px -25px;
-                padding: 25px 20px;
+            .video-placeholder {
+                height: 300px;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🔍 Vision Breakthrough</h1>
-            <p>Discover the Ancient Secret to Crystal Clear Vision</p>
-        </div>
+        <!-- Header Section -->
+        <header class="header">
+            <script>
+  window.pixelId = "673a8335385f43679b792859";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+        </header>
+        <vturb-smartplayer id="vid-688d4e964c79100934d1eef1" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/5458343c-730f-4c2d-9794-8783e31951d8/players/688d4e964c79100934d1eef1/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
         
-        <div class="content">
-            <div class="greeting">
-                Dear Friend,
-            </div>
-            
-            <div class="story-section">
-                <p>Imagine waking up one morning and seeing the world with crystal clarity, without the blur, the strain, or the constant need for glasses or contacts. For years, you've been told that declining vision is an inevitable part of aging, a fate you simply have to accept. But what if that wasn't entirely true?</p>
-                
-                <p>Meet <span class="highlight">Sarah Miller from Austin, Texas</span>. For over two decades, Sarah struggled with severe myopia and astigmatism. Her world was a constant haze, and even with the thickest lenses, she often missed the subtle beauty of everyday life. Driving at night was a terrifying ordeal, and reading her grandchildren's bedtime stories became a frustrating blur.</p>
-            </div>
-            
-            <div class="image-placeholder">
-                <a href="https://www.trysharpvision.com/vsl-bg?aff_id=1051" target="_blank">
-                    <img src="sarah_transformation.png" alt="Sarah's Transformation Story" style="width: 100%; height: auto; display: block; border-radius: 10px;">
-                </a>
-            </div>
-            
-            <div class="story-section">
-                <p>Until she stumbled upon a forgotten ancient ritual, a simple <span class="highlight">30-second morning routine</span> practiced by remote tribes in the Himalayas, known for their extraordinary eyesight even in old age.</p>
-                
-                <p><strong>Just three weeks later, her optometrist was left speechless.</strong></p>
-                
-                <p>Sarah's vision had improved from a staggering <span class="highlight">20/400 to a remarkable 20/30</span>. The same doctor who had advised her to prepare for eventual blindness couldn't explain the miraculous transformation he was witnessing.</p>
-            </div>
-            
-            <div class="testimonial">
-                In my thirty years of practice, I've never seen such a rapid and dramatic improvement in vision. Whatever you're doing, keep doing it.
-                <div style="text-align: right; margin-top: 15px; font-weight: bold;">
-                    — Dr. Michael Chen, Optometrist
-                </div>
-            </div>
-            
-            <div class="story-section">
-                <p>Sarah's secret wasn't a costly surgery, painful injections, or a lifetime supply of expensive medications.</p>
-                
-                <p><strong>It was a simple, yet profound, morning ritual involving a common household ingredient that most people overlook.</strong></p>
-                
-                <p>The medical community might call it impossible, but over <span class="highlight">50,000 people worldwide</span> are now living proof of its incredible power.</p>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">50,000+</span>
-                    <div class="stat-label">People Helped</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">30 sec</span>
-                    <div class="stat-label">Daily Routine</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3 weeks</span>
-                    <div class="stat-label">Average Results</div>
-                </div>
-            </div>
-            
-            <div class="story-section">
-                <p>This groundbreaking discovery has nothing to do with eye exercises, restrictive diets, or synthetic vitamin supplements. It's rooted in cutting-edge research from leading universities that uncovers the <span class="highlight">TRUE root cause of vision decline</span> – and it's not what your eye doctor has been telling you.</p>
-            </div>
-            
-            <div class="cta-section">
-                <h2 style="margin-bottom: 20px; color: #2c3e50;">Ready to Transform Your Vision?</h2>
-                <p style="font-size: 1.1em; margin-bottom: 10px;">Discover Sarah's astonishing journey and unlock the secret to naturally restoring your vision</p>                <a href="https://www.trysharpvision.com/vsl-bg?aff_id=1051" class="cta-button">🔍 Watch Sarah\'s Story Now →</a> <!-- Insira seu link aqui -->
-            </div>
-            
-            <div class="ps-section">
-                <p><span class="ps-label">P.S.</span> Sarah now enjoys driving again, reads her favorite novels without any visual aid, and can clearly see the stars in the night sky. At 72, her vision is sharper than most people half her age, proving that age is just a number when it comes to healthy eyesight.</p>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        // Add smooth scrolling and interactive elements
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animate stats on scroll
-            const stats = document.querySelectorAll('.stat-number');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animation = 'countUp 2s ease-out';
-                    }
-                });
-            });
-            
-            stats.forEach(stat => observer.observe(stat));
-            
-            // Add hover effect to testimonial
-            const testimonial = document.querySelector('.testimonial');
-            testimonial.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateX(10px)';
-                this.style.transition = 'transform 0.3s ease';
-            });
-            
-            testimonial.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateX(0)';
-            });
-        });
-        
-        // Add CSS animation for counting effect
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes countUp {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
-</body>
-    <script
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 - Todos los derechos reservados</p>
+            <script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
   async
   defer
 ></script>
+        </footer>
+    
+    </script>
+</body>
 </html>
